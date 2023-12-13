@@ -1,4 +1,6 @@
 # anydns
+**Please note that the anydns.online DNS server is not currently operational. This will change at some point. Thank you for your understanding**
+
 Anydns is a DNS server which has a subdomain for every IPv6 address (yes, including yours!). It currently has one running implementation, at anydns.online.
 
 ## How do I get a domain name?
@@ -26,3 +28,6 @@ There are many things which make this impractical: firewalls and network address
 
 ## Okay cool, I'm gonna go use this now.
 I should probably warn you, [LetsEncrypt limits a domain to 50 new certificates per week](https://letsencrypt.org/docs/rate-limits/). So, if anyone starts using anydns to any signficant degree, I'm probably going to hit that limit pretty quickly. But I still encourage you to use it! If nothing else, hitting the registration limit gives me an argument that anydns.online is popular enough to justify being put on the public suffix list, which would remove this limit.
+
+## Anything else you'd like to say for yourself?
+Most of the code here is copied from Emil Hernvall's [guide to building a DNS server in rust](https://github.com/EmilHernvall/dnsguide). Many thanks to him for making my job much easier.
