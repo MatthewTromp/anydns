@@ -24,10 +24,10 @@ If you want to encrypt your server's communications, you need an SSL certificate
 ## Why would I want an SSL certificate for my IP address?
 Plenty of reasons! Just to take an example, let's say you want to send a file to someone else. Currently, there are no good ways to do this that don't require either the use of an intermediary server or for your counterparty to have some weird software on their computer. But why? The internet was designed for this sort of peer-to-peer communication. Just start up a server on your computer which serves the file and send them the link!
 
-There are many things which make this impractical: firewalls and network address translation (which itself is due to the continued dominance of IPv4) are the two that come most prominently to mind. But the inability to easily encrypt this comminication is also a problem. The best way to solve this would be for letsencrypt to allow certificates for IP addresses. In the meantime, anydns provides an alternative.
+There are many things which make this impractical: firewalls and network address translation are the two that come most prominently to mind. But the inability to easily encrypt this comminication is also a problem. The best way to solve this would be for letsencrypt to allow certificates for IP addresses. In the meantime, anydns provides an alternative.
 
 ## Okay cool, I'm gonna go use this now.
-I should probably warn you, [LetsEncrypt limits a domain to 50 new certificates per week](https://letsencrypt.org/docs/rate-limits/). So, if anyone starts using anydns to any signficant degree, I'm probably going to hit that limit pretty quickly. But I still encourage you to use it! If nothing else, hitting the registration limit gives me an argument that anydns.online is popular enough to justify being put on the public suffix list, which would remove this limit.
+I should probably warn you, [LetsEncrypt limits a domain to 50 new certificates per week](https://letsencrypt.org/docs/rate-limits/). So, if anyone starts using anydns to any signficant degree, I'm probably going to hit that limit pretty quickly. But I still encourage you to use it! If nothing else, hitting the registration limit gives me an argument that anydns.online is popular enough to justify being put on the [public suffix list](https://publicsuffix.org/), which would remove this limit.
 
 ## Anything else you'd like to say for yourself?
-Most of the code here is copied from Emil Hernvall's [guide to building a DNS server in rust](https://github.com/EmilHernvall/dnsguide). Many thanks to him for making my job much easier.
+Most of the code here is copied from Emil Hernvall's [guide to building a DNS server in rust](https://github.com/EmilHernvall/dnsguide). Many thanks to him.
